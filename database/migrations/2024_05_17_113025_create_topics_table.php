@@ -14,7 +14,6 @@ return new class extends Migration
         Schema::create('topics', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('category_id');
             $table->text('heading');
             $table->text('description')->nullable();
             $table->timestamps();

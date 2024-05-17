@@ -9,5 +9,5 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 class Topic extends Model
 {
     use HasFactory, SoftDeletes;
-    protected $fillable = ['name', 'category_id', 'heading'];
+    protected $fillable = ['name', 'heading'];
 }
