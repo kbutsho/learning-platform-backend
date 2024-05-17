@@ -14,11 +14,11 @@ class TopicSeeder extends Seeder
     public function run(): void
     {
         $topics = [
-            ['name' => 'python', 'description' => 'coming soon', 'created_at' => now(), 'updated_at' => now()],
-            ['name' => 'django', 'description' => 'coming soon', 'created_at' => now(), 'updated_at' => now()],
-            ['name' => 'numpy', 'description' => 'coming soon', 'created_at' => now(), 'updated_at' => now()],
-            ['name' => 'pandas', 'description' => 'coming soon', 'created_at' => now(), 'updated_at' => now()],
-            ['name' => 'matplotlib', 'description' => 'coming soon', 'created_at' => now(), 'updated_at' => now()],
+            ['name' => 'python', 'heading' => 'coming soon', 'created_at' => now(), 'updated_at' => now()],
+            ['name' => 'django', 'heading' => 'coming soon', 'created_at' => now(), 'updated_at' => now()],
+            ['name' => 'numpy', 'heading' => 'coming soon', 'created_at' => now(), 'updated_at' => now()],
+            ['name' => 'pandas', 'heading' => 'coming soon', 'created_at' => now(), 'updated_at' => now()],
+            ['name' => 'matplotlib', 'heading' => 'coming soon', 'created_at' => now(), 'updated_at' => now()],
         ];
         Topic::insert($topics);
     }
