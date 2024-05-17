@@ -13,11 +13,10 @@ return new class extends Migration
     {
         Schema::create('topics', function (Blueprint $table) {
             $table->id();
-            $table->name('string');
-            $table->category_id('string');
-            $table->heading('string');
-            $table->description('text')->nullable();
-            $table->name('string');
+            $table->string('name');
+            $table->string('category_id');
+            $table->text('heading');
+            $table->text('description')->nullable();
             $table->timestamps();
         });
     }
