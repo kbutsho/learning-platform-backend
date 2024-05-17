@@ -14,11 +14,12 @@ class CategorySeeder extends Seeder
     public function run(): void
     {
         $categories = [
-            ['name' => 'frontend'],
-            ['name' => 'backend'],
-            ['name' => 'web-development'],
-            ['name' => 'machine-learning'],
-            ['name' => 'computer-science-fundamentals'],
+            ['name' => 'frontend-technologies', 'created_at' => now(), 'updated_at' => now()],
+            ['name' => 'backend-technologies', 'created_at' => now(), 'updated_at' => now()],
+            ['name' => 'web-development', 'created_at' => now(), 'updated_at' => now()],
+            ['name' => 'machine-learning', 'created_at' => now(), 'updated_at' => now()],
+            ['name' => 'programming-languages', 'created_at' => now(), 'updated_at' => now()],
+            ['name' => 'computer-science-fundamentals', 'created_at' => now(), 'updated_at' => now()],
         ];
         Category::insert($categories);
     }
